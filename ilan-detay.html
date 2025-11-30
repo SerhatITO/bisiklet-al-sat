@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bisiklet Detay - BisikletAlSat</title>
+    <meta name="description" content="Bisiklet detay sayfası - İkinci el bisiklet alım satım">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>🚴‍♂️ BisikletAlSat</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="index.html#urunler">Bisikletler</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="#" class="btn-ilan" onclick="showIlanForm()">Ücretsiz İlan Ver</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <div id="productDetailContent">
+        <div class="loading">
+            <h2>Bisiklet bilgileri yükleniyor...</h2>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🚴‍♂️ BisikletAlSat</h3>
+                    <p>Güvenli bisiklet alışverişinin adresi</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hızlı Linkler</h4>
+                    <ul>
+                        <li><a href="index.html">Ana Sayfa</a></li>
+                        <li><a href="index.html#urunler">Bisikletler</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="iletisim.html">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>İletişim</h4>
+                    <p>📧 info@bisikletalsat.com</p>
+                    <p>📞 0850 850 85 85</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BisikletAlSat. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="ilanModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeIlanForm()">&times;</span>
+            <h2>🚴‍♂️ Ücretsiz İlan Ver</h2>
+            <form id="ilanForm">
+                <div class="form-group">
+                    <label for="ilanBaslik">İlan Başlığı *</label>
+                    <input type="text" id="ilanBaslik" placeholder="Örn: Cannondale Trail 6 Dağ Bisikleti" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ilanKategori">Kategori *</label>
+                    <select id="ilanKategori" required>
+                        <option value="">Seçiniz</option>
+                        <option value="dab">Dağ Bisikleti</option>
+                        <option value="yol">Yol Bisikleti</option>
+                        <option value="sehir">Şehir Bisikleti</option>
+                        <option value="elektrikli">Elektrikli Bisiklet</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ilanFiyat">Fiyat (TL) *</label>
+                    <input type="number" id="ilanFiyat" placeholder="8500" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ilanAciklama">Açıklama *</label>
+                    <textarea id="ilanAciklama" rows="5" placeholder="Bisikletin durumu, özellikleri, neden satıyorsunuz..." required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ilanKonum">Konum *</label>
+                    <input type="text" id="ilanKonum" placeholder="İstanbul, Kadıköy" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="ilanTelefon">Telefon *</label>
+                    <input type="tel" id="ilanTelefon" placeholder="05XX XXX XX XX" required>
+                </div>
+                
+                <button type="submit" class="btn-submit">İlanı Yayınla</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/ilan-detay.js"></script>
+</body>
+</html>

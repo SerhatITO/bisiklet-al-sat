@@ -1,0 +1,111 @@
+/* MOBILE FIRST STYLES */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    /* NAVBAR MOBILE */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+        padding: 2rem 0;
+        gap: 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: 1rem 0;
+    }
+
+    /* HAMBURGER ANIMATION */
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* HERO MOBILE */
+    .hero {
+        padding: 100px 0 60px;
+        margin-top: 60px;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .search-bar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .search-bar input {
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    .search-bar button {
+        width: 100%;
+        border-radius: 25px;
+    }
+
+    /* KATEGORİLER MOBILE */
+    .categories {
+        padding: 3rem 0;
+    }
+
+    .category-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* ÜRÜNLER MOBILE */
+    .products {
+        padding: 3rem 0;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* TABLET STYLES */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .category-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 1025px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
