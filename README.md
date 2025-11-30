@@ -1,7 +1,7 @@
 # BisikletAlSat - Responsive Website
 
 ## 📋 Proje Açıklaması
-Bu proje, bisiklet alım-satımı için tasarlanmış tamamen responsive bir web sitesidir. İş görüşmesi task'ı olarak hazırlanmıştır.
+Bu proje, bisiklet alım-satımı için tasarlanmış tamamen responsive bir web sitesidir. Seo Kurallarına uygunluğu görüntülenmesi için yapılmış prototiptir.
 
 ## 🎯 Özellikler
 - ✅ **Tamamen Responsive Tasarım** (Mobile-First yaklaşımı)
